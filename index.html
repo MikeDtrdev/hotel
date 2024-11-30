@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Reservation System</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Laraveil Suites</h1>
+        <div class="row" id="room-list">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://picsum.photos/200/150" class="card-img-top" alt="Room Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Room 101</h5>
+                        <p class="card-text">Single Room with a comfortable bed and a beautiful view of the city.</p>
+                        <p class="card-text">Price: $100 per night</p>
+                        <p class="card-text">Room Type: Single</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://picsum.photos/200/151" class="card-img-top" alt="Room Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Room 102</h5>
+                        <p class="card-text">Double Room with two comfortable beds and a beautiful view of the city.</p>
+                        <p class="card-text">Price: $150 per night</p>
+                        <p class="card-text">Room Type: Double</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://picsum.photos/200/152" class="card-img-top" alt="Room Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Room 103</h5>
+                        <p class="card-text">Suite Room with a comfortable bed, a living room, and a beautiful view of the city.</p>
+                        <p class="card-text">Price: $200 per night</p>
+                        <p class="card-text">Room Type: Suite</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <form id="reservation-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" id="name" name="name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="room-number-reservation">Room Number:</label>
+                <select class="form-control" id="room-number-reservation" name="roomNumber">
+                    <option value="">Select Room</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="check-in">Check-in:</label>
+                <input type="date" class="form-control" id="check-in" name="checkIn">
+            </div>
+            <div class="form-group">
+                <label for="check-out">Check-out:</label>
+                <input type="date" class="form-control" id="check-out" name="checkOut">
+            </div>
+            <button type="submit" class="btn btn-primary">Make Reservation</button>
+        </form>
+        <div id="reservation-list"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
