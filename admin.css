@@ -1,0 +1,19 @@
+/* admin.css */
+body {
+    font-family: Arial, sans-serif;
+}
+
+#reservation-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#reservation-table th, #reservation-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+#reservation-table th {
+    background-color: #f0f0f0;
+}
